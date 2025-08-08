@@ -1,7 +1,8 @@
 `default_nettype none `timescale 1 ns / 1ns
 
 module sha256(
-  input logic clk
+  input logic clk,
+  input logic resetn
 );
 
 typedef logic [7:0]  BYTE;   // 8-bit byte (char)
@@ -12,6 +13,18 @@ typedef struct packed {
 	WORD datalen, state[8];
 	logic [63:0] bitlen; // instead of unsigned long long
 } SHA256_CTX;
+
+always @(posedge clk or negedge resetn) begin
+  if(!resetn) begin
+
+  end else begin
+
+  end
+end
+
+always_comb begin
+
+end
 
 function automatic logic [31:0] rotleft(input logic [31:0] a, input int b);
   rotleft = (a << b) | (a >> (32 - b));

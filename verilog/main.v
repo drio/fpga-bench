@@ -8,6 +8,7 @@ module main
   `ifdef SIMULATION_RUN
   input logic clk,
   `endif
+  input logic resetn,
   input logic [7:0] input_buffer [64] // 64 byte contiguous
 );
 
@@ -27,6 +28,17 @@ initial begin
   end
 end
 
+always @(posedge clk or negedge resetn) begin
+  if(!resetn) begin
+
+  end else begin
+
+  end
+end
+
+always_comb begin
+
+end
 
 sha256 sha256_inst(
   .clk(clk)
