@@ -1,0 +1,17 @@
+# veridian.yml
+source_dirs:
+  - verilog
+
+# (Optionally recurse the rest of the workspace too)
+auto_search_workdir: true
+
+verilator:
+  syntax:
+    enabled: true
+    path: "verilator"
+    args:
+      - --lint-only
+      - --timing
+      - --sv
+      - -Wall
+      - -Iverilog
