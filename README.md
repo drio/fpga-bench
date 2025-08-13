@@ -11,3 +11,4 @@ sha256 implementation from [this project](https://github.com/B-Con/crypto-algori
 | Raspberry Pi 3 | ARM Cortex-A53 | 0.08 MH/s | Debian 11 (bullseye) | 6.1.21-v8+ | gcc 10.2.1 |
 | Macbook Pro M3 Pro | Apple M3 Pro | 4.2 MH/s | MacOS Sequioa (v15.5) | v15.5 | clang-1700.0.13.5 |
 | Intel Laptop (Chuwi Corebook X) | Intel i5-1035G1 CPU @ 1.00GHz | 2.53 MH/s | Ubuntu 24.04 LTS | 6.14.0.27-generic | gcc 13.3.0 |
+| Beelink SER9 Pro (Mini PC) | AMD Ryzen 7 255 | 4.68 MH/s | Arch Linux | 6.15.9-arch1-1 | gcc 15.1.1 |
