@@ -41,7 +41,8 @@ always_comb begin
 end
 
 sha256 sha256_inst(
-  .clk(clk)
+  .clk(clk),
+  .resetn(resetn)
 );
 
 endmodule
